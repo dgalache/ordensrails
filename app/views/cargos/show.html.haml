@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Tipo:
+  = @cargo.tipo
+%p
+  %b Salario:
+  = @cargo.salario
+
+= link_to 'Edit', edit_cargo_path(@cargo)
+\|
+= link_to 'Back', cargos_path

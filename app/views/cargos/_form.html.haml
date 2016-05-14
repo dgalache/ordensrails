@@ -1,0 +1,9 @@
+= simple_form_for(@cargo) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :tipo
+    = f.input :salario
+
+  .form-actions
+    = f.button :submit
