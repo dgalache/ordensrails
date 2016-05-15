@@ -13,8 +13,8 @@ require 'spec_helper'
 		scenario 'excluir cargo' do #, :javascript => true do
 			cargo = FactoryGirl.create(:cargo)
 			visit cargos_path
-		
-			click_link('Excluir', match: :first)
+			click_link('Destroy')
+
 		end
 		def preencher_e_verficar_cargo
 			fill_in 'Tipo', :with => "Redes"
